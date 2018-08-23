@@ -1,4 +1,3 @@
-<script type="text/babel">
 class Card extends React.Component {
 	constructor( props ) {
 		super( props );
@@ -11,8 +10,3 @@ class Card extends React.Component {
 	};
 }
 
-ReactDOM.render(
-	<Card />,
-	document.getElementById( "root" )
-);
-</script>
