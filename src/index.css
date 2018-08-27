@@ -2,4 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
+}
+
+#card {
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  margin: 0px auto;
 }
