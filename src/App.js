@@ -34,7 +34,7 @@ class Card extends React.Component {
     const topDivStyle = {
       height: 50,
       width: "100%",
-
+	  display: "flex"
     };
     const userPicDivStyle = {
       height: 50,
@@ -52,7 +52,8 @@ class Card extends React.Component {
       display: "flex",
       flexDirection: "column",
       height: 50,
-      justifyContent: "left"
+      justifyContent: "center",
+			paddingLeft: 5
     }
     return (
       <div id="card" style={ cardStyle }>
@@ -62,12 +63,12 @@ class Card extends React.Component {
             </div>
           </div>
           <div id="userNameAndTimeDiv" style={ userNameAndTimeDivStyle }>
-            <div>
-              <h3>{ userName }</h3>
-            </div>
-            <div>
-              <h6>{ datePosted }</h6>
-            </div>
+						<div style={{ textAlign: "left" }}>
+							<span>{ userName }</span>
+						</div>
+						<div style={{ textAlign: "left" }}>
+							<span style={{ fontSize: "0.6em" }}>{ datePosted }</span>
+						</div>
           </div>
           <div id="moreOptions">
           </div>
