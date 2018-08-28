@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -26,7 +25,7 @@ class Card extends React.Component {
     
     const cardStyle = {
       width: 620,
-      height: 440,
+      height: 430,
       border: "1px solid black",
       margin: "0px auto",
       textAlign: "center"
@@ -76,11 +75,23 @@ class Card extends React.Component {
           </div>
         </div>
         <hr style={{ margin: "0px 10px" }} />
-        <div id="reactionDiv">
+        <div id="reactionDiv" style={{ display: "flex", alignItems: "center", height: 50, width: "100%" }}>
+          <div style={{ padding: "5px 10px" }}>
+            <span>Like</span>
+          </div>
+          <div style={{ padding: "10px 5px" }}>
+            <span>Comment</span>
+          </div>
+          <div style={{ padding: 10 }}>
+            <span>Share</span>
+          </div>
         </div>
       </div>
     );
   };
 };
+  
+
 
 export default App;
+
