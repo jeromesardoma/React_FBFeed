@@ -25,8 +25,8 @@ class Card extends React.Component {
     const datePosted = this.state.datePosted;
     
     const cardStyle = {
-      width: 500,
-      height: 250,
+      width: 620,
+      height: 440,
       border: "1px solid black",
       margin: "0px auto",
       textAlign: "center"
@@ -53,7 +53,7 @@ class Card extends React.Component {
       flexDirection: "column",
       height: 50,
       justifyContent: "center",
-			paddingLeft: 5
+      paddingLeft: 5
     }
     return (
       <div id="card" style={ cardStyle }>
@@ -63,18 +63,19 @@ class Card extends React.Component {
             </div>
           </div>
           <div id="userNameAndTimeDiv" style={ userNameAndTimeDivStyle }>
-						<div style={{ textAlign: "left" }}>
-							<span>{ userName }</span>
-						</div>
-						<div style={{ textAlign: "left" }}>
-							<span style={{ fontSize: "0.6em" }}>{ datePosted }</span>
-						</div>
-          </div>
-          <div id="moreOptions">
+            <div style={{ textAlign: "left" }}>
+                <span>{ userName }</span>
+            </div>
+            <div style={{ textAlign: "left" }}>
+                <span style={{ fontSize: "0.6em" }}>{ datePosted }</span>
+            </div>
           </div>
         </div>
         <div id="image">
+          <div style={{ height: 315, width: 600, border: "1px solid black", margin: "5px auto 10px auto" }}>
+          </div>
         </div>
+        <hr style={{ margin: "0px 10px" }} />
         <div id="reactionDiv">
         </div>
       </div>
