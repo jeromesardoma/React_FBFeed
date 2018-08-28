@@ -45,4 +45,4 @@ const styles = {
 	reactionDivStyle: reactionDivStyle
 }
 
-export { styles };
+export { styles }
