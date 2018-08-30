@@ -1,3 +1,4 @@
+// works only with ES5 for now
 const sum = require( './sum' );
 
 test( "add 1 + 2 equals 3", () => {
