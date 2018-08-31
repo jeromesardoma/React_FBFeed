@@ -1,11 +1,19 @@
-// ES6
+import React from "react";
+import Enzyme, { shallow, render, mount, configure } from "enzyme";
+import Adapter from 'enzyme-adapter-react-16'; 
+import { createSerializer } from "enzyme-to-json";
+import sinon from "sinon";
 
-// import { configure } from "enzyme";
-// import Adapter from 'enzyme-adapter-react-16'; 
+// Set default serializer for Jest to be from enzyme-to-json
+// Produces an easier to read format
+expect.addSnapshotSerializer( createSerializer( { mode: "deep" } ) );  
 
-// ES5
+// React 16 Enzyme adapter
+Enzyme.configure( { adapter: new Adapter() } ); 
 
-var enzyme = require( "enzyme" ); 
-var Adapter = require( "enzyme-adapter-react-16" ); 
-
-enzyme.configure( { adapter: new Adapter() } ); 
+// Define globals to cut down on imports in test files
+global.React = React; 
+global.shallow = shallow; 
+global.render = render;
+global.mount = mount;
+global.sinon = sinon;

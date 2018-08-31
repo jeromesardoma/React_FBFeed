@@ -35,6 +35,13 @@ const reactionDivStyle = {
 	height: 50, 
 	width: "100%"
 }
+const reactionCounterStyle = {
+	flexGrow: 1, 
+	textAlign: "right", 
+	paddingRight: 10
+}
+
+// styles object
 
 const styles = {
 	cardStyle: cardStyle,
@@ -42,7 +49,8 @@ const styles = {
 	userPicDivStyle: userPicDivStyle,
 	userPicStyle: userPicStyle,
 	userNameAndTimeDivStyle: userNameAndTimeDivStyle,
-	reactionDivStyle: reactionDivStyle
+	reactionDivStyle: reactionDivStyle,
+	reactionCounterStyle: reactionCounterStyle
 }
 
 export { styles }
