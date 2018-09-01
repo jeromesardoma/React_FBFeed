@@ -128,15 +128,15 @@ class Card extends React.Component {
 				</div>
 				<hr style={{ margin: "0px 10px" }} />
 				<div id="reactionDiv" style={ styles.reactionDivStyle }>
-					<button id="like" onClick={ liked ? this.unlike : this.addLike } style={{ padding: "5px 10px" }}>
+					<div id="like" className={ liked ? "reactionClicked" : '' } onClick={ liked ? this.unlike : this.addLike } style={ styles.likeNotClickedStyle }>
 						Like
-					</button>
-					<button id="comment" onClick={ commented ? this.uncomment : this.addComment } style={{ padding: "10px 5px" }}>
+					</div>
+					<div id="comment" className={ commented ? "reactionClicked" : '' } onClick={ commented ? this.uncomment : this.addComment } style={ styles.commentNotClickedStyle }>
 						Comment
-					</button>
-					<button id="share" onClick={ shared ? this.unshare : this.addShare } style={{ padding: 10 }}>
+					</div>
+					<div id="share" className={ shared ? "reactionClicked" : '' } onClick={ shared ? this.unshare : this.addShare } style={ styles.shareNotClickedStyle }>
 						<span>Share</span>
-					</button>
+					</div>
 					<div id="reactionCounter" style={ styles.reactionCounterStyle }>
 						<span>{ showReactions() }</span>
 					</div>

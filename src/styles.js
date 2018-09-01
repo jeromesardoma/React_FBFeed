@@ -40,6 +40,30 @@ const reactionCounterStyle = {
 	textAlign: "right", 
 	paddingRight: 10
 }
+const likeNotClickedStyle = {
+	padding: "5px 10px"
+}
+const likeClickedStyle = {
+	padding: "5px 10px",
+	fontWeight: "bold",
+	color: "darkblue"
+}
+const commentNotClickedStyle = {
+	padding: "10px 5px"
+}
+const commentClickedStyle = {
+	padding: "10px 5px",
+	fontWeight: "bold",
+	color: "darkblue"
+}
+const shareNotClickedStyle = {
+	padding: "10px"
+}
+const shareClickedStyle = {
+	padding: "10px",
+	fontWeight: "bold",
+	color: "darkblue"
+}
 
 // styles object
 
@@ -50,7 +74,10 @@ const styles = {
 	userPicStyle: userPicStyle,
 	userNameAndTimeDivStyle: userNameAndTimeDivStyle,
 	reactionDivStyle: reactionDivStyle,
-	reactionCounterStyle: reactionCounterStyle
+	reactionCounterStyle: reactionCounterStyle,
+	likeNotClickedStyle: likeNotClickedStyle,
+	commentNotClickedStyle: commentNotClickedStyle,
+	shareNotClickedStyle: shareNotClickedStyle
 }
 
 export { styles }
